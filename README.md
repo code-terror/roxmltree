@@ -15,7 +15,7 @@ assert!(elem.has_tag_name("rect"));
 
 ## Why read-only?
 
-Because in some cases all you need is to retrieve some data from an XML document.
+Because in somees all you need is to retrieve some data from an XML document.
 And for such cases, we can make a lot of optimizations.
 
 As for *roxmltree*, it's fast not only because it's read-only, but also because
