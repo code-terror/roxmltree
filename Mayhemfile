@@ -1,0 +1,8 @@
+project: code-terror/roxmltree
+target: afl-fuzz
+
+cmds:
+  - cmd: ./afl-fuzz
+    afl: true
+tests:
+  - file: /roxmltree/afl-fuzz/in/1.xml
