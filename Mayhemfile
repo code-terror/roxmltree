@@ -5,4 +5,4 @@ cmds:
   - cmd: /roxmltree/testing-tools/afl-fuzz/target/debug/afl-fuzz
     afl: true
 tests:
-  - file:///roxmltree/testing-tools/afl-fuzz/in/
+  - file:///roxmltree/testing-tools/afl-fuzz/in
