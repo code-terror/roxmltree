@@ -2,7 +2,7 @@ project: code-terror/roxmltree
 target: afl-fuzz
 
 cmds:
-  - cmd: ./afl-fuzz
+  - cmd: /roxmltree/testing-tools/afl-fuzz/target/debug/afl-fuzz
     afl: true
 tests:
-  - file://roxmltree/afl-fuzz/in/1.xml
+  - file:///roxmltree/testing-tools/afl-fuzz/in/

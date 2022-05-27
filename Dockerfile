@@ -12,7 +12,5 @@ WORKDIR /roxmltree/testing-tools/afl-fuzz/
 RUN ${HOME}/.cargo/bin/cargo afl build
 WORKDIR /
 COPY Mayhemfile Mayhemfile
-#FROM ubuntu:20.04
-
-#COPY --from=builder /roxmltree/testing-tools/afl-fuzz/target/debug/* /
-#COPY --from=builder /Mayhemfile /
+ENTRYPOINT ["cargo", "afl", "fuzz", "-i", "/roxmltree/testing-tools/afl-fuzz/in", "-o", "/roxmltree/testing-tools/afl-fuzz/out"]
+CMD ["/roxmltree/testing-tools/afl-fuzz/target/debug/afl-fuzz"]
